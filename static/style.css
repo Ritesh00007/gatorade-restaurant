@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1a6b2a 0%, #2ecc71 50%, #f0c040 100%);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.hero .tagline {
+  font-size: 1.3rem;
+  margin: 16px 0 32px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #1a6b2a;
+  padding: 14px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* SECTIONS */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1a6b2a;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #2ecc71;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ABOUT */
+#about {
+  background: #f9f9f9;
+}
+
+#about p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* MENU */
+#menu {
+  background: white;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.menu-item {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.menu-item .emoji {
+  font-size: 2.5rem;
+}
+
+.menu-item h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 12px 0 8px;
+  color: #222;
+}
+
+.menu-item p {
+  font-size: 0.92rem;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.menu-item .price {
+  display: inline-block;
+  background: #1a6b2a;
+  color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* CONTACT */
+#contact {
+  background: #f0faf3;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  background: white;
+  border: 1px solid #d4edd9;
+  border-radius: 12px;
+  padding: 18px 28px;
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+  min-width: 240px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #1a6b2a;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.9rem;
+}
